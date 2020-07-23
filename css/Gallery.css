@@ -1,0 +1,47 @@
+﻿#cubeImg {
+    width: 325px;
+    height: 325px;
+    transform: scale(0.8);
+}
+
+.cubeSlider {
+    position: absolute;
+    left: 50%;
+    top: 60%;
+    margin-left: -215px;
+    margin-top: -50px;
+    padding: 0 25px;
+}
+
+/* Title in a wrapper*/
+.wrap {
+    /* Transition */
+    transition: transform 0.5s cubic-bezier(0, 1.15, 1, 1);
+    /* Wrapper style*/
+    box-shadow: 5px 10px 25px 2px rgba(255,255,255,0.2);
+    border-radius: 80px;
+    background-color: white;
+    opacity: 1;
+    /* Title text style*/
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    white-space: nowrap;
+    font-size: 25px;
+}
+/* Title scaling on hover*/
+div.wrap:hover {
+    /* Animation on hover */
+    transform: scale(1.5);
+    /* Smooth transition */
+    transition: transform 2s cubic-bezier(0, 1.15, 1, 1.15);
+}
+
+.scale .wrap {
+    /* Wrapper scaling*/
+    position: absolute;
+    left: 50%;
+    top: 27%;
+    margin-left: -280px;
+    margin-top: -50px;
+    padding: 0 25px;
+}

@@ -1,0 +1,40 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.Master.cs" Inherits="RubiksCube_Masterpage.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+    <head runat="server">
+        <title>Rubik's Cube</title>
+        <meta charset="utf-8" />
+        <link href="https://fonts.googleapis.com/css?family=Montserrat+Alternates:600|Raleway&display=swap" rel="stylesheet">
+        <link href="css/Master.css" rel="stylesheet" type="text/css" />
+        <asp:ContentPlaceHolder ID="head" runat="server"/>
+        <style type="text/css">
+        .style
+        {
+            <%=background%>
+            background-size: 200% 100%;
+            background-position: left bottom;
+        }
+        </style>
+    </head>
+<body>
+    <header id="heading" runat="server">
+        <div class="container">
+            <a href="Home.aspx">
+                <img src="imgs/assets/logo.png" alt="logo" class="logo" />
+            </a>
+            <nav>
+                <ul id="list" runat="server">
+                    <li><a id="mangLink" class="style" runat="server" style="display:none" href="Manage.aspx">Manage</a></li>   
+                    <li><a class="style" href="Home.aspx">Home</a></li>
+                    <li><a class="style" href="Gallery.aspx">Image Gallery</a></li>
+                    <li><a id="loginLink" class="style" runat="server" href="Login.aspx">Login</a></li>
+                    <li><a id="abandLink" class="style" runat="server" style="display:none" href="Logout.aspx">Logout</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <asp:ContentPlaceHolder ID="body" runat="server"/>
+</body>
+</html>

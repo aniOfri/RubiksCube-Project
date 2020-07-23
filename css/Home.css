@@ -1,0 +1,157 @@
+/* Title in a wrapper*/
+.wrap {
+    /* Transition */
+    transition: transform 0.5s cubic-bezier(0, 1.15, 1, 1);
+    /* Wrapper style*/
+    box-shadow: 5px 10px 25px 2px rgba(255,255,255,0.2);
+    border-radius: 80px;
+    background-color: white;
+    opacity: 1;
+    /* Title text style*/
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    white-space: nowrap;
+    font-size: 25px;
+}
+/* Title scaling on hover*/
+div.wrap:hover {
+    /* Animation on hover */
+    transform: scale(1.5);
+    /* Smooth transition */
+    transition: transform 2s cubic-bezier(0, 1.15, 1, 1.15);
+}
+
+.scale .wrap {
+    /* Wrapper scaling*/
+    position: absolute;
+    left: 50%;
+    top: 27%;
+    margin-left: -350px;
+    margin-top: -50px;
+    padding: 0 25px;
+}
+
+/* About */
+.about {
+    /* Wrapper style*/
+    box-shadow: 5px 10px 25px 2px rgba(255,255,255,0.2);
+    background: white;
+    box-sizing: border-box;
+    border-radius: 80px;
+    opacity: 1;
+    /* Wrapper position and scale*/
+    white-space: nowrap;
+    display: flex;
+    position: absolute;
+    padding: 30px;
+    top: 60%;
+    left: 50%;
+    margin-left: -1000px;
+    margin-top: -5px;
+    transform: scale(0.5);
+    transition: 1s;
+}
+
+/*About boxes position*/
+.about2 {
+    left: 50%;
+    top: 60%;
+    margin-left: 0;
+    transition: 1s;
+}
+
+.about3 {
+    /* Wrapper scaling*/
+    left: 50%;
+    top: 60%;
+    margin-left: -500px;
+    transition: 1s;
+}
+/*Rubiks about changing size*/
+.aboutGroup:hover #rubiks:hover {
+    top: 50%;
+    margin-left: -500px;
+    transform: scale(1);
+    transition: transform 1s;
+    transition: margin 2s;
+    z-index: 10;
+}
+
+/*Rubiks about changing size*/
+.aboutGroup:hover #eron:hover {
+    top: 50%;
+    margin-left: -500px;
+    transform: scale(1);
+    transition: transform 1s;
+    transition: margin 2s;
+    z-index: 10;
+}
+
+/*Rubiks about changing size*/
+.aboutGroup:hover #speedcube:hover {
+    top: 50%;
+    transition: transform 1s;
+    transform: scale(1);
+    z-index: 10;
+}
+
+
+/*Image position inside boxes*/
+.about .aboutImg {
+    flex: 0 0 300px;
+}
+
+.about2 .aboutImg {
+    flex: 0 0 200px;
+}
+
+/*Rubik's cube image*/
+.about .aboutImg img {
+    width: 300px;
+    height: 300px;
+}
+
+/*Eron image*/
+.about2 .aboutImg img {
+    width: 220px;
+    height: 300px;
+    border-radius: 30px;
+}
+
+/*Yunsheng image*/
+.about3 .aboutImg img {
+    border-radius: 30px;
+}
+
+/*About content*/
+.aboutCont {
+    padding-right: 20px;
+}
+
+/*About content - Title*/
+.aboutCont h1 {
+    /*Text position*/
+    margin: 0;
+    padding-left: 0;
+    /*Text style*/
+    color: #008ae6;
+    text-shadow: -2px -1px 0 #000;
+}
+
+/*About content - paragraph*/
+.aboutCont p {
+    /*Text position*/
+    margin: 0;
+    margin-top: 20px;
+    padding: 10px 0 0;
+    text-align: justify;
+    /*Text style*/
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+}
+
+/* Navbar */
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
